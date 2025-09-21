@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part 2</title>
+       <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+
+        button {
+            background-color: rgb(36, 10, 152);
+            color: white;
+            padding: 3px;
+            border-radius: 6px;
+            border: none;
+        }
+
+        button:hover {
+            background-color: rgb(103, 92, 160);
+            margin: 3px;
+            color: #060505;
+        }
+
+        #highlightFirstCity {
+            margin-left: 35px
+        }
+
+        .highlight {
+            background-color: aquamarine;
+            color: #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+   <section id="sec-6">
+        <h2>Event Handling in the DOM</h2>
+        <button id="clickMe">Click Me</button>
+    </section>
+    <hr>
+    
+    <section id="sec-7">
+        <h2>Event Delegation</h2>
+        <ul id="proglang" type="none">
+            <li class="lang">Js</li>
+            <li class="lang">C++</li>
+            <li class="lang">Python</li>
+            <li class="lang">Ruby</li>
+        </ul>
+        <p>Click on any lang to select it!</p>
+    </section>
+    <hr>
+
+    <section id="sec-8">
+        <h2>Form Handling</h2>
+        <form action="#" id="feedBackForm">
+            <label for="feedBackInput">Your Feedback:</label>
+            <input type="text" id="feedBackInput" placeholder="Enter Feedback">
+            <button type="submit">Submit feedBackForm</button>
+        </form>
+          <p id="feedbackDisplay"></p>
+    </section>
+<hr>
+    <section id="sec-9">
+        <h2>Dom Content Loaded</h2>
+        <p id="domStatus">Waiting for DOM to load.......</p>
+    </section>
+    <hr>
+
+    <section id="id10">
+        <h2>CSS Classes Manipulation</h2>
+        <p id="descriptionText">This Text Will Be Change COlor</p>
+        <button id="toggleHighlight">Toggle HighLight</button>
+    </section>
+
+    <script src="02_dom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Dom</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+
+        button {
+            background-color: rgb(36, 10, 152);
+            color: white;
+            padding: 3px;
+            border-radius: 6px;
+            border: none;
+        }
+
+        button:hover {
+            background-color: rgb(103, 92, 160);
+            margin: 3px;
+            color: #060505;
+        }
+
+        #highlightFirstCity {
+            margin-left: 35px
+        }
+
+        .highlight {
+            background-color: aquamarine;
+            color: #1a1a1a;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript DOM Fun Example</h1>
+    <section id="example-1">
+        <p id="first-sec"> Accessing The Element And Change The Content</p>
+        <button id="changeText">Click To Change</button>
+    </section>
+    <hr>
+    <section id="example-2">
+        <h2>Traversing The DOM</h2>
+        <ul id="citiesList" type="none">
+            <li>Bangalore</li>
+            <li>Ahmedabad</li>
+            <li>Surat</li>
+            <li>Mahuva</li>
+        </ul>
+        <button id="highlightFirstCity">Highlight First City</button>
+    </section>
+    <hr>
+    <section id="example-3">
+        <h2>Manipulating DOM Element</h2>
+        <div id="greenTea">
+            Order : <span id="teaTypes">Green Tea</span>
+        </div>
+        <button id="changeOrder">Change Order To Masala Chai😋</button>
+    </section>
+
+    <hr>
+    <section id="example-4">
+        <h2>Creating And Inserting Element</h2>
+        <button id="addNewItem">Add New Item To The Shopping List</button>
+        <ul id="shopping-list" type="none">
+            <li>Bread</li>
+            <li>Milk</li>
+        </ul>
+    </section>
+
+
+    <hr>
+    <section id="example-5">
+        <h2>Removing DOM Elements</h2>
+        <ul id="tastList" type="none">
+            <li>Tast 1</li>
+            <li>Tast 2</li>
+            <li>Tast 3</li>
+            <li>Tast 4</li>
+        </ul>
+        <button id="removeLastTask">Remove Last Task</button>
+    </section>
+
+
+    <script src="01_dom.js"></script>
+</body>
+
+</html>
