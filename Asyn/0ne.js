@@ -85,3 +85,19 @@ order('biryani')
 .then((food)=>paymentProcess(food))
 .then((food)=>deliverySucc(food))
 .then((msg)=>console.log(`Enjoy Your Food ${msg} ☺️`))
+
+
+async function getAll(){
+    try{
+        
+       let orderFood= await order("biryani")
+       let payment=await paymentProcess(orderFood)
+       let delivery=await deliverySucc(payment)
+       console.log(delivery)
+
+    }
+    catch(err){
+        console.log('error',err)
+    }
+}
+getAll()
